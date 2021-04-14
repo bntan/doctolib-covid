@@ -1,0 +1,24 @@
+centre-de-vaccination-covid-19-ville-de-paris
+centre-covid19-paris-5
+centre-de-vaccination-grand-chambery
+centre-de-vaccination-covid-19-mairie-du-6eme-arrondissement-de-paris
+centre-de-vaccination-mairie-du-7eme-paris
+centre-de-vaccination-covid-19-paris-8e
+centre-de-vaccination-covid-mairie-du-9eme-arrondissement
+centre-de-vaccination-covid-19-centre-medical-international-cmi
+centre-de-vaccination-covid-centre-de-sante-bauchat-nation
+centre-de-vaccination-covid-19-des-sapeurs-pompiers-de-paris
+centre-de-vaccination-paris-14e
+centre-medical-institut-pasteur-cmip-vaccination-covid-19
+# centre-de-vaccination-covid-centre-henry-dunant-croix-rouge-francaise
+centre-de-vaccination-covid-paris-15e
+centre-de-vaccination-covid-19-mairie-du-16eme-arrondissement
+centre-de-vaccination-covid-19-paris-17eme
+sos-medecins-paris
+ars-idf-centre-covisan-cpts-paris-18
+# centre-de-vaccination-paris-19eme
+cvc-cpts-ump
+centre-de-vaccination-ambulatoire-d-alfortville-reserve-aux-professionnels-de-sante
+centre-de-vaccination-covid-19-choisy-le-roi
+centre-de-vaccination-covid-ville-de-creteil
+centre-de-vaccinations-covid-saint-mande
