@@ -70,5 +70,5 @@ for center in centers:
             context = ssl.create_default_context()
             with smtplib.SMTP_SSL("smtp.gmail.com", 465, context = context) as server:
                 server.login(SENDER_EMAIL, SENDER_PASSWORD)
-                server.sendmail(SENDER_EMAIL, RECEIVER_EMAIL, result)
+                server.sendmail(SENDER_EMAIL, RECEIVER_EMAIL, result.encode('utf-8'))
                 print("  --> Alert sent to " + RECEIVER_EMAIL)
