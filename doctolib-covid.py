@@ -62,7 +62,7 @@ for center in centers:
         response.raise_for_status()
         nb_availabilities = response.json()["total"]
         
-        result = str(nb_availabilities) + " availabilities at " + place_name + " - " + place_address
+        result = str(nb_availabilities) + " appointments can be taken at " + place_name + " - " + place_address
         print(result)
         
         if nb_availabilities > 0:
