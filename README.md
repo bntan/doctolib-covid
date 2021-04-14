@@ -15,9 +15,10 @@ This script sends email alerts (using Google SMTP server) when vaccination appoi
 - Set the vaccination centers close to your location in [centers.txt](../master/centers.txt)
 
 - Set environment variables
-  - SENDER_EMAIL
-  - SENDER_PASSWORD
-  - RECEIVER_EMAIL 
+  - DISABLE_EMAIL: set to true to disable email alerts
+  - SENDER_EMAIL: the sender email address
+  - SENDER_PASSWORD: the associated password
+  - RECEIVER_EMAIL : the receiver email address
 
 - Execute command
 `$ python doctolib-covid.py`

@@ -3,9 +3,10 @@ import datetime
 import requests
 import smtplib, ssl
 
-SENDER_EMAIL = os.environ["SENDER_EMAIL"]
-SENDER_PASSWORD = os.environ["SENDER_PASSWORD"]
-RECEIVER_EMAIL = os.environ["RECEIVER_EMAIL"]
+DISABLE_EMAIL = os.environ.get("DISABLE_EMAIL")
+SENDER_EMAIL = os.environ.get("SENDER_EMAIL")
+SENDER_PASSWORD = os.environ.get("SENDER_PASSWORD")
+RECEIVER_EMAIL = os.environ.get("RECEIVER_EMAIL")
 
 with open('centers.txt') as centers_txt:
     centers = centers_txt.readlines()
@@ -65,7 +66,7 @@ for center in centers:
         result = str(nb_availabilities) + " appointments can be taken at " + place_name + " - " + place_address
         print(result)
         
-        if nb_availabilities > 0:
+        if nb_availabilities > 0 and DISABLE_EMAIL != "None":
             context = ssl.create_default_context()
             with smtplib.SMTP_SSL("smtp.gmail.com", 465, context = context) as server:
                 server.login(SENDER_EMAIL, SENDER_PASSWORD)
