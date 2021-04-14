@@ -63,7 +63,7 @@ for center in centers:
         response.raise_for_status()
         nb_availabilities = response.json()["total"]
         
-        result = str(nb_availabilities) + " appointments can be taken at " + place_name + " - " + place_address
+        result = str(nb_availabilities) + " appointments available at " + place_name + " - " + place_address
         print(result)
         
         if nb_availabilities > 0 and DISABLE_EMAIL != "true":
@@ -71,3 +71,4 @@ for center in centers:
             with smtplib.SMTP_SSL("smtp.gmail.com", 465, context = context) as server:
                 server.login(SENDER_EMAIL, SENDER_PASSWORD)
                 server.sendmail(SENDER_EMAIL, RECEIVER_EMAIL, result)
+                print("  --> Alert sent to " + RECEIVER_EMAIL)
