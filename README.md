@@ -23,7 +23,7 @@ This script sends email alerts (using Google SMTP server) when vaccination appoi
 - Execute command
 `$ python doctolib-covid.py`
 
-- Output example:
+- Output example
 ```
 0 appointments available at Centre de Vaccination - Salle Olympe de Gouges - 15 Rue Merlin, 75011 Paris
 0 appointments available at Centre de Vaccination - Centre Bertheau - 15-17 Rue Charles Bertheau, 75013 Paris
@@ -34,9 +34,20 @@ This script sends email alerts (using Google SMTP server) when vaccination appoi
 0 appointments available at Centre de Vaccination - Paris 20e - 87 Rue des Haies, 75020 Paris
 0 appointments available at Centre de vaccination Aubrac - 10 Rue de l'Aubrac, 75012 Paris
 0 appointments available at Centre de Vaccination - Mairie du 10e - 72 Rue du Faubourg Saint-Martin, 75010 Paris
-...
+[...]
 ```
 
 ## Cron
 
-The cron [cron-doctolib-covid.yml](../master/.github/workflows/cron-doctolib-covid.yml) executes the script every 15 minutes
+Use [cron-doctolib-covid.yml](../master/.github/workflows/cron-doctolib-covid.yml) to schedule the script execution. Uncomment the `schedule` section.
+The example below executes the script every 5 minutes
+```yaml
+name: Cron Doctolib COVID
+
+on:
+  [...]
+  schedule:
+    - cron: "*/5 * * * *"
+
+[...]
+```
