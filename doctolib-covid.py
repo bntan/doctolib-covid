@@ -18,7 +18,7 @@ for center in centers:
     data = requests.get(f"https://www.doctolib.fr/booking/{center}.json").json()["data"]
     
     visit_motives = [visit_motive for visit_motive in data["visit_motives"]
-                     if visit_motive["name"].startswith("1ère injection") and 
+                     if visit_motive["name"].startswith("1re injection") and 
                      "AstraZeneca" not in visit_motive["name"]]
     if not visit_motives:
         continue
@@ -57,7 +57,7 @@ for center in centers:
                         "practice_ids": practice_ids,
                         "insurance_sector": "public",
                         "destroy_temporary": "true",
-                        "limit":7
+                        "limit":2
                 },
         )
         response.raise_for_status()

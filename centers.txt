@@ -12,6 +12,7 @@ centre-de-vaccination-paris-14e
 centre-medical-institut-pasteur-cmip-vaccination-covid-19
 # centre-de-vaccination-covid-centre-henry-dunant-croix-rouge-francaise
 centre-de-vaccination-covid-paris-15e
+vaccinodrome-covid-19-porte-de-versailles
 centre-de-vaccination-covid-19-mairie-du-16eme-arrondissement
 centre-de-vaccination-covid-19-paris-17eme
 sos-medecins-paris

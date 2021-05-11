@@ -3,8 +3,8 @@ name: Cron Doctolib COVID
 on:
   push:
   workflow_dispatch:
-  # schedule:
-    # - cron: "*/5 * * * *"
+  schedule:
+    - cron: "*/15 * * * *"
 
 jobs:
   build:
