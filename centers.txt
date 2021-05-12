@@ -19,6 +19,9 @@ sos-medecins-paris
 ars-idf-centre-covisan-cpts-paris-18
 # centre-de-vaccination-paris-19eme
 cvc-cpts-ump
+centre-de-vaccination-covid-19-stade-de-france
+centre-de-vaccination-covid-19-ivry-sur-seine
+centre-de-vaccination-covid-19-vitry-sur-seine
 centre-de-vaccination-ambulatoire-d-alfortville-reserve-aux-professionnels-de-sante
 centre-de-vaccination-covid-19-choisy-le-roi
 centre-de-vaccination-covid-ville-de-creteil
